@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://allfont.ru/allfont.css?fonts=deftone-stylus" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./source/style/main.css">
+    <title>Hollywood dashboard</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <h1>W</h1>
+            </div>
+            <nav class="navbar__nav">
+                <a class="navbar__link navbar__link--home" href="#"> Home</a>
+                <a class="navbar__link navbar__link--statistics" href="#">Statistics</a>
+                <a class="navbar__link navbar__link--users" href="#">Users</a>
+                <a class="navbar__link navbar__link--settings" href="#">Settings</a>
+                <a class="navbar__link navbar__link--queries" href="#">Queries</a>
+            </nav>
+            <button class="navbar__power-btn"></button>
+        </div> <!-- ./navbar -->
+
+        <div class="container">
+            <header class="header">
+            </header> <!-- ./header -->
+
+            <main class="main">
+                <section class="main__monthly-revenue"></section>
+                <section class="main__hour-revenue"></section>
+                <section class="main__reviews"></section>
+                <div class="main__container-inner">
+                    <section class="main__tasks"></section>
+                    <section class="main__progres"></section>
+                    <section class="main__shipments"></section>
+                </div>
+            </main> <!-- ./main -->
+
+            <div class="container-inner">
+                <aside class="aside">
+                    <nav class="aside__nav">
+                        <a class="aside__link aside__link--users" href="#"></a>
+                        <a class="aside__link aside__link--chat" href="#"></a>
+                        <a class="aside__link aside__link--like" href="#"></a>
+                    </nav>
+
+                    <ul class="aside__actors">
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/jennifer-lawrence.png" alt="Jennifer Lawrence">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Jennifer Lawrence</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/brad-pitt.png" alt="Brad Pitt">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Brad Pitt</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/leonardo-dicaprio.png" alt="Leonardo Dicaprio">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Leonardo Dicaprio</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/jesse-eisenberg.png" alt="Jesse Eisenberg">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Jesse Eisenberg</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/kristen-stewart.png" alt="Kristen Stewart">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Kristen Stewart</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/ben-affleck.png" alt="Ben Affleck">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Ben Affleck</p>
+                                <p class="aside__profession">Cheif Authority</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="aside__search" action="#">
+                        <input class="aside__input" type="text" placeholder="Search Peoples, Chats and Reviews">
+                        <button class="aside__submit" type="submit"></button>
+                        <button class="aside__reset" type="reset"></button> 
+                    </form>
+
+                </aside> <!-- ./aside -->
+        
+                <footer class="footer">
+                    <h3 class="footer__title">Featured Companys</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item footer__item--radio">
+                            <a href="#">
+                                <img src="./source/img/footer/radio-logo.png" alt="Radio">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--css">
+                            <a href="#">
+                                <img src="./source/img/footer/css-3-logo.png" alt="Css 3">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--deviantart">
+                            <a href="#">
+                                <img src="./source/img/footer/deviantart-logo.png" alt="Deviantart">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--xing">
+                            <a href="#">
+                                <img src="./source/img/footer/xing-logo.png" alt="Xing">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--vimeo">
+                            <a href="#">
+                                <img src="./source/img/footer/vimeo-logo.png" alt="Vimeo">
+                            </a>
+                        </li>
+                        <li class="footer__item footer__item--vk">
+                            <a href="#">
+                                <img src="./source/img/footer/vk-logo.png" alt="Vkontacte">
+                            </a>
+                        </li>
+                    </ul>
+                </footer> <!-- ./footer -->
+            </div> <!-- ./container-inner -->
+        </div>
+    </div> <!-- ./wrap -->
+
+</body>
+</html>
