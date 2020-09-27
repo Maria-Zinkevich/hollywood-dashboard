@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 990px;
+  height: 795px;
+  margin: 18px 18px 27px 19px;
+  background-color: blueviolet;
+}
+.main__monthly-revenue {
+  display: flex;
+  flex-wrap: wrap;
+  width: 704px;
+  height: 266px;
+  background-color: violet;
+}
+
+.main__hour-revenue {
+  display: flex;
+  flex-wrap: wrap;
+  width: 264px;
+  height: 266px;
+  background-color: yellow;
+}
+
+.main__reviews {
+  display: flex;
+  flex-wrap: wrap;
+  width: 467px;
+  height: 508px;
+  background-color: green;
+
+}
+
+.main__tasks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 501px;
+  height: 245px;
+  background-color: orange;
+}
+
+.main__progres {
+  display: flex;
+  flex-wrap: wrap;
+  width: 241px;
+  height: 245px;
+  background-color: peru;
+}
+
+.main__shipments {
+  display: flex;
+  flex-wrap: wrap;
+  width: 241px;
+  height: 245px;
+  background-color: purple;
+}

@@ -1,0 +1,146 @@
+.aside {
+    min-width: 272px;
+    height: 607px;
+
+    background-color: #FFFFFF;
+}
+
+.aside__nav {
+    position: relative;
+
+    display: flex;
+
+    background: linear-gradient(90deg, #fd4e75, #fc7858);
+}
+
+.aside__link {
+    width: 91px;
+    min-height: 48px;
+}
+
+.aside__link--users {
+    background: url(/source/img/aside/icons/users-icon.png) no-repeat center;
+}
+
+.aside__link--chat {
+    background: url(/source/img/aside/icons/chat-icon.png) no-repeat center;
+}
+
+.aside__link--like {
+    background: url(/source/img/aside/icons/like-icon.png) no-repeat center;
+}
+
+.aside__link:hover {
+    background-color: #c44457;
+}
+
+.aside__link--users:hover:after {
+    @include aside-pointer(38px);
+}
+
+.aside__link--chat:hover:after {
+    @include aside-pointer(128px);
+}
+
+.aside__link--like:hover:after {
+    @include aside-pointer(218px);
+}
+
+.aside__actors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 516px;
+    padding: 0 20px 0 20px;
+}
+
+.aside__actor {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 19px;
+}
+
+.aside__actor:first-child {
+    padding-top: 24px;
+}
+
+.aside__actor:last-child::after {
+    border: none;
+}
+
+.aside__actor::after {
+    content: '';
+    width: 233px;
+    padding-top: 19px;
+
+    border-bottom: 2px solid #F1F1F1; 
+}
+
+.aside__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 165px;
+
+    background: url(/source/img/aside/icons/chat-icon-info.png) no-repeat right;
+}
+
+.aside__name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #777777;
+}
+
+.aside__profession {
+    font-size: 10px;
+    color: #BFBFBF;
+}
+
+.aside__avatar {
+    width: 43px;
+    height: 43px;
+    padding-right: 17px;
+}
+
+.aside__search {
+    display: flex;
+    padding: 10px 0 13px 17px;
+ 
+    background-size: 19px 19px;
+
+    border-top: 3px solid #F0F0F0;
+    border-bottom: 2px solid #F0F0F0;
+}
+
+.aside__input{
+    width: 161px;
+    
+    font-weight: 300;
+    font-size: 10px;
+    color: #F1F1F1;
+
+    border: none;
+    border-bottom: 2px solid #F1F1F1;
+}
+
+.aside__submit {
+    width: 19px;
+    height: 19px;
+    margin-left: 20px;
+
+    background: url(/source/img/aside/icons/zoom-out-icon.png) no-repeat right;
+    
+    border: none;
+    cursor: pointer;
+    }
+
+.aside__reset {
+    width: 19px;
+    height: 19px;
+    margin-left: 12px;
+
+    background: url(/source/img/aside/icons/edit-icon.png) right no-repeat;
+    
+    border: none;
+}

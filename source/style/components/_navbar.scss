@@ -1,0 +1,107 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 74px;
+    height: 1000px;
+
+    background: url(/source/img/navbar/navbar-background.png);
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 70px;
+    height: 71px;
+
+    font-family: 'Deftone Stylus', arial;
+    font-size: 22px;
+    color: #FD7858;
+    
+    background-color: #FFFFFF;
+
+    box-shadow:  5px -1px 5px #BDBDBD;
+}
+
+.navbar__nav {
+    position: relative;
+
+    width: 70px;
+    height: 929px;
+}
+
+.navbar__link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 70px;
+    min-height: 70px;
+
+    font-weight: normal;
+    font-size: 11px;
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.navbar__power-btn {
+    margin-bottom: 19px;
+    width: 70px;
+    min-height: 70px;
+
+    color: #ffffff;
+
+    background-color: transparent;
+    
+    border: none;
+}
+
+.navbar__link--home {
+    background: url(/source/img/navbar/home-icon.png) no-repeat center;
+    background-size: 20px 18px;
+}
+
+.navbar__link--statistics {
+    background: url(/source/img/navbar/statistics-icon.png) no-repeat center;
+    background-size: 20px 18px;
+}
+
+.navbar__link--users {
+    background: url(/source/img/navbar/user-icon.png) no-repeat center;
+    background-size: 16px 20px;
+}
+
+.navbar__link--settings {
+    background: url(/source/img/navbar/settings-icon.png) no-repeat center;
+    background-size: 20px 20px;
+}
+
+.navbar__link--queries {
+    background: url(/source/img/navbar/queries-icon.png) no-repeat center;
+    background-size: 20px 18px;
+}
+
+.navbar__power-btn {
+    background: url(/source/img/navbar/power-icon.png) no-repeat bottom; 
+}
+
+.navbar__link--home:hover:after {
+    @include navbar-pointer(35px);
+}
+
+.navbar__link--statistics:hover:after {
+    @include navbar-pointer(105px);
+}
+
+.navbar__link--users:hover:after {
+    @include navbar-pointer(175px);
+}
+
+.navbar__link--settings:hover:after{
+    @include navbar-pointer(245px);
+}
+
+.navbar__link--queries:hover:after {
+    @include navbar-pointer(315px);
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    margin: 0 auto;
+    width: 1366px;
+    height: 1000px;
+    
+    font-family: $primary-font, Arial, Helvetica, sans-serif;
+
+    background-color: #F0F0F0;
+    outline: 5px solid orange;
+}
+
+.main__container-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 501px;
+
+    outline: 2px solid black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    outline: 4px solid green;
+}
+
+.container-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 271px;
+    height: 835px;
+
+    outline: 2px solid red;
+}
