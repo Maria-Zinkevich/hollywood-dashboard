@@ -1,0 +1,19 @@
+@mixin navbar-pointer($top) {
+    content: ''; 
+    position: absolute;
+    top: $top;
+    left: 66px;
+
+    border: 7px solid transparent;
+    border-left: 7px solid #FD7858;
+}
+
+@mixin aside-pointer($left) {
+	content: ''; 
+	position: absolute;
+	top: 47px;
+	left: $left;
+
+	border: 7px solid transparent; 
+	border-top: 7px solid #c44457;
+}
