@@ -19,15 +19,15 @@
 }
 
 .aside__link--users {
-    background: url(/source/img/aside/icons/users-icon.png) no-repeat center;
+    background: url(../../img/aside/icons/users-icon.png) no-repeat center;
 }
 
 .aside__link--chat {
-    background: url(/source/img/aside/icons/chat-icon.png) no-repeat center;
+    background: url(../../img/aside/icons/chat-icon.png) no-repeat center;
 }
 
 .aside__link--like {
-    background: url(/source/img/aside/icons/like-icon.png) no-repeat center;
+    background: url(../../img/aside/icons/like-icon.png) no-repeat center;
 }
 
 .aside__link:hover {
@@ -83,7 +83,7 @@
     justify-content: center;
     width: 165px;
 
-    background: url(/source/img/aside/icons/chat-icon-info.png) no-repeat right;
+    background: url(../../img/aside/icons/chat-icon-info.png) no-repeat right;
 }
 
 .aside__name {
@@ -129,7 +129,7 @@
     height: 19px;
     margin-left: 20px;
 
-    background: url(/source/img/aside/icons/zoom-out-icon.png) no-repeat right;
+    background: url(../../img/aside/icons/zoom-out-icon.png) no-repeat right;
     
     border: none;
     cursor: pointer;
@@ -140,7 +140,7 @@
     height: 19px;
     margin-left: 12px;
 
-    background: url(/source/img/aside/icons/edit-icon.png) right no-repeat;
+    background: url(../../img/aside/icons/edit-icon.png) right no-repeat;
     
     border: none;
 }
