@@ -4,7 +4,7 @@
     width: 74px;
     height: 1000px;
 
-    background: url(/source/img/navbar/navbar-background.png);
+    background: url(../../img/navbar/navbar-background.png);
 }
 
 .navbar__logo {
@@ -58,32 +58,32 @@
 }
 
 .navbar__link--home {
-    background: url(/source/img/navbar/home-icon.png) no-repeat center;
+    background: url(../../img/navbar/home-icon.png) no-repeat center;
     background-size: 20px 18px;
 }
 
 .navbar__link--statistics {
-    background: url(/source/img/navbar/statistics-icon.png) no-repeat center;
+    background: url(../../img/navbar/statistics-icon.png) no-repeat center;
     background-size: 20px 18px;
 }
 
 .navbar__link--users {
-    background: url(/source/img/navbar/user-icon.png) no-repeat center;
+    background: url(../../img/navbar/user-icon.png) no-repeat center;
     background-size: 16px 20px;
 }
 
 .navbar__link--settings {
-    background: url(/source/img/navbar/settings-icon.png) no-repeat center;
+    background: url(../../img/navbar/settings-icon.png) no-repeat center;
     background-size: 20px 20px;
 }
 
 .navbar__link--queries {
-    background: url(/source/img/navbar/queries-icon.png) no-repeat center;
+    background: url(../../img/navbar/queries-icon.png) no-repeat center;
     background-size: 20px 18px;
 }
 
 .navbar__power-btn {
-    background: url(/source/img/navbar/power-icon.png) no-repeat bottom; 
+    background: url(../../img/navbar/power-icon.png) no-repeat bottom; 
 }
 
 .navbar__link--home:hover:after {
