@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://allfont.ru/allfont.css?fonts=deftone-stylus" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./source/style/main.css">
     <title>Hollywood dashboard</title>
 </head>
@@ -27,16 +28,317 @@
 
         <div class="container">
             <header class="header">
+
+                <ul class="panel__list">
+                    <li class="panel__item panel__item--info"></li>
+
+                    <li class="panel__item panel__item--folder"></li>
+
+                    <li class="panel__item panel__item--settings"></li>
+
+                    <li class="panel__item">
+                        <form class="panel__item-search" action="#" method="POST">
+                            <input type="text" id="search" name="search" placeholder="Search Anything Here....">
+                        </form>
+                    </li>
+
+                    <li class="panel__item panel__item--upload"> </li>
+
+                    <li class="panel__item panel__item--envelope"></li>
+
+                    <li class="panel__item panel__item--planet"></li>
+
+                    <li class="panel__item">
+                        <ul class="panel__operator-list">
+                            <li class="panel__operator-item">
+                                <img class="panel__operator-avatar" src="./source/img/header/kendall-jenner.png" alt="Kendall Jenner">
+                            </li>
+                            
+                            <li class="panel__operator-information">
+                                <p class="panel__operator-item panel__operator-name">Kendall Jenner</p>
+                                <p class=" panel__operator-item panel__operator-profession">Cheif authority</p>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul class="statistics__list">
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily visitors</p>
+                        <p class="statistics__amount">150,0000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily customers</p>
+                        <p class="statistics__amount">120,0000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily orders</p>
+                        <p class="statistics__amount">900,000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily sales</p>
+                        <p class="statistics__amount">850,000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily shipments</p>
+                        <p class="statistics__amount">750,000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily revenue</p>
+                        <p class="statistics__amount">$985,0000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item">
+                        <p class="statistics__title">Daily reviews</p>
+                        <p class="statistics__amount">600,000</p>
+                        <div class="statistics__dynamic">
+                            <p class="statistics__progress">1020</p>
+                            <p class="statistics__regress">1020</p>
+                        </div>
+                    </li>
+                    <li class="statistics__item statistics__additional-btn">+ Add stactics</li>
+                </ul>
             </header> <!-- ./header -->
 
             <main class="main">
-                <section class="main__monthly-revenue"></section>
-                <section class="main__hour-revenue"></section>
-                <section class="main__reviews"></section>
+
+                <section class="monthly-revenue">
+
+                    <div class="monthly-revenue__header">
+                        <h2 class="monthly-revenue__title">Monthly revenue progress</h2>
+                        <ul class="monthly-revenue__list monthly-revenue__list--period">
+                            <li class="monthly-revenue__item">Month</li>
+                            <li class="monthly-revenue__item">Day</li>
+                            <li class="monthly-revenue__item">Year</li>
+                        </ul>
+                    </div>
+
+                    <div class="monthly-revenue__body">
+                        <ul class="monthly-revenue__list monthly-revenue__list--revenue">
+                            <li>400k</li>
+                            <li>300k</li>
+                            <li>200k</li>
+                            <li>100k</li>
+                        </ul>
+                        <div class="monthly-revenue__content">
+                            <img class="monthly-revenue__scheme" src="./source/img/main/monthly-revenue-scheme.png"
+                                alt="Monthly revenue scheme">
+                            <ul class="monthly-revenue__list monthly-revenue__list--months">
+                                <li>Jan</li>
+                                <li>Feb</li>
+                                <li>Mar</li>
+                                <li>Apr</li>
+                                <li>May</li>
+                                <li>Jun</li>
+                                <li>Jul</li>
+                                <li>Aug</li>
+                                <li>Sep</li>
+                                <li>Oct</li>
+                                <li>Nov</li>
+                                <li>Dec</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </section>
+
+                <section class="hour-revenue">
+                    <h2 class="hour-revenue__title">Revenue per hour</h2>
+                    <div class="hour-revenue__content">
+                        <div class="hour-revenue__chart">
+                            <img class="hour-revenue__chart-amount" src="./source/img/main/hour-revenue-chart.png" alt="Hour revenue statistic">
+                        </div>
+                        <div class="hour-revenue__statistics">
+                            <p class="hour-revenue__progress">1020</p>
+                            <p class="hour-revenue__regress">1020</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="customers-feed">
+
+                    <h2 class="customers-feed__title">Customers feed</h2>
+                    <div class="customers-feed__container">
+                        <div class="customers-feed__user ">
+                            <div class="customers-feed__user-info">
+                                <img class="customers-feed__avatar" src="./source/img/main/sophie-turner.png" alt="Sophie Turner">
+                                <p class="customers-feed__status">10 min ago</p>
+                            </div>
+    
+                            <ul class="customers-feed__list">
+                                <li class="customers-feed__item">
+                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                </li>
+                                <li class="customers-feed__item">
+                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                                </li>
+                                <li class="customers-feed__item">
+                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="customers-feed__user">
+                            <div class="customers-feed__user-info">
+                                <img class="customers-feed__avatar" src="./source/img/main/peter-quill.png" alt="Peter Quill">
+                                <p class="customers-feed__status">15 min ago</p>
+                            </div>
+                            
+                          
+    
+                            <ul class="customers-feed__list">
+                                <li class="customers-feed__item">
+                                    <span>Peter Quill</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </section>
+
                 <div class="main__container-inner">
-                    <section class="main__tasks"></section>
-                    <section class="main__progres"></section>
-                    <section class="main__shipments"></section>
+
+                    <section class="tasks">
+
+                        <h2 class="tasks__title">Тodays task</h2>
+
+                        <div class="tasks__checkbox">
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox">
+                                <label for="checkbox-arrange">
+                                    <input class="task__input" type="checkbox" id="checkbox-arrange">
+                                </label>
+                         
+                                <div class="task__body">
+                                    <span class="task__label">Arrange</span>
+                                    <span class="task__aim">simply dummy text of the printing and.......</span>
+                                    <span class="task__time"><time>12:24</time> AM</span>  
+                                </div>
+                            </div>
+
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox">
+                                <label for="checkbox-shipment">
+                                    <input class="task__input" type="checkbox" id="checkbox-shipment">
+                                </label>
+                                
+                                <div class="task__body">
+                                    <span class="task__label">Shipment</span>
+                                    <span class="task__aim">simply dummy text of the printing and.......</span>
+                                    <span class="task__time"><time>01:24</time> AM</span>  
+                                </div>
+                            </div>
+
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox">
+                                <label for="checkbox-list">
+                                    <input class="task__input" type="checkbox" id="checkbox-list">
+                                </label>
+                            
+                                <div class="task__body">
+                                    <span class="task__label">Make list</span>
+                                    <span class="task__aim">simply dummy text of the printing......</span>
+                                    <span class="task__time"><time>02:24</time> AM</span>  
+                                </div>
+                            </div>
+
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox">
+                                <label for="checkbox-review">
+                                    <input class="task__input" type="checkbox" id="checkbox-review">
+                                </label>
+                                
+                                <div class="task__body">
+                                    <span class="task__label">Review</span>
+                                    <span class="task__aim">simply dummy text of the printing and.......</span>
+                                    <span class="task__time"><time>03:24</time> AM</span>  
+                                </div>
+                            </div>
+
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox" >
+                                <label for="checkbox-planning">
+                                    <input class="task__input" type="checkbox" id="checkbox-planning">
+                                </label>
+                                
+                                <div class="task__body">
+                                    <span class="task__label">Planning</span>
+                                    <span class="task__aim">simply dummy text of the printing and.......</span>
+                                    <span class="task__time"><time>04:24</time> AM</span>  
+                                </div>
+                            </div>
+
+
+                            <div class="tasks__line"></div>
+
+                            <div class="task__checkbox" >
+                                <label for="checkbox-meeting">
+                                    <input class="task__input" type="checkbox" id="checkbox-meeting">
+                                </label>
+                                
+                                <div class="task__body">
+                                    <span class="task__label">Meeting</span>
+                                    <span class="task__aim">simply dummy text of the printing and.......</span>
+                                    <span class="task__time"><time>05:24</time> AM</span>  
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="progress">
+                        <h2 class="progress__title">Progress</h2>
+                        <div class="progress__content">
+                            <img class="progress__scheme" src="./source/img/main/progress-scheme.png" alt="Progress scheme">
+                            <p class="progress__amount">$150,0000</p>
+                            <div class="progress__statistics">
+                                <p class="progress__progress">1020</p>
+                                <p class="progress__regress">1020</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="shipments">
+                        <h2 class="shipments__title">Shipments</h2>
+                        <div class="shipments__content">
+                            <img class="shipments__map" src="./source/img/main/shipments-map.png" alt="Shipments map">
+                            <p class="shipments__amount">$15,000</p>
+                            <div class="shipments__statistics">
+                                <p class="shipments__progress">1020</p>
+                                <p class="shipments__regress">1020</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main> <!-- ./main -->
 
@@ -55,7 +357,7 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Jennifer Lawrence</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
 
@@ -65,7 +367,7 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Brad Pitt</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
 
@@ -75,7 +377,7 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Leonardo Dicaprio</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
 
@@ -85,7 +387,7 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Jesse Eisenberg</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
 
@@ -95,7 +397,7 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Kristen Stewart</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
 
@@ -105,21 +407,41 @@
                             </div>
                             <div class="aside__information">
                                 <p class="aside__name">Ben Affleck</p>
-                                <p class="aside__profession">Cheif Authority</p>
+                                <p class="aside__profession">Cheif authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/jennifer-lawrence.png" alt="Jennifer Lawrence">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Jennifer Lawrence</p>
+                                <p class="aside__profession">Cheif authority</p>
+                            </div>
+                        </li>
+
+                        <li class="aside__actor">
+                            <div class="aside__avatar">
+                                <img src="./source/img/aside/actors/brad-pitt.png" alt="Brad Pitt">
+                            </div>
+                            <div class="aside__information">
+                                <p class="aside__name">Brad Pitt</p>
+                                <p class="aside__profession">Cheif authority</p>
                             </div>
                         </li>
                     </ul>
 
                     <form class="aside__search" action="#">
-                        <input class="aside__input" type="text" placeholder="Search Peoples, Chats and Reviews">
+                        <input class="aside__input" type="text" placeholder="Search peoples, chats and reviews">
                         <button class="aside__submit" type="submit"></button>
-                        <button class="aside__reset" type="reset"></button> 
+                        <button class="aside__reset" type="reset"></button>
                     </form>
 
                 </aside> <!-- ./aside -->
-        
+
                 <footer class="footer">
-                    <h3 class="footer__title">Featured Companys</h3>
+                    <h3 class="footer__title">Featured companys</h3>
                     <ul class="footer__list">
                         <li class="footer__item footer__item--radio">
                             <a href="#">
@@ -154,8 +476,9 @@
                     </ul>
                 </footer> <!-- ./footer -->
             </div> <!-- ./container-inner -->
-        </div>
+        </div> <!-- ./container -->
     </div> <!-- ./wrap -->
 
 </body>
+
 </html>

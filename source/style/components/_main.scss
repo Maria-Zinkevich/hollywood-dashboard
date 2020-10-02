@@ -1,57 +1,341 @@
 .main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 990px;
-  height: 795px;
-  margin: 18px 18px 27px 19px;
-  background-color: blueviolet;
-}
-.main__monthly-revenue {
-  display: flex;
-  flex-wrap: wrap;
-  width: 704px;
-  height: 266px;
-  background-color: violet;
+    flex: auto;
+    min-width: 320px;
+    max-width: 939px;
+    height: 841px;
+    // width: 990px;
+    // min-height: 795px;
+    // margin: 18px 18px 27px 19px;
 }
 
-.main__hour-revenue {
-  display: flex;
-  flex-wrap: wrap;
-  width: 264px;
-  height: 266px;
-  background-color: yellow;
+.monthly-revenue {
+    @include block-decor (644px, 206px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+
+    padding: 30px;
+
+    &__header {
+        @include flex-content(space-between);
+
+        width: 640px;
+        height: 18px;
+
+        background: url(../img/main/additional-menu.png) no-repeat right;
+    }
+
+    &__title {
+        @include title(left);
+    }
+
+    &__list {
+        @include text-size-weight-color (12px, bold, #BFBFBF);
+
+        display: flex;
+        padding: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        padding-right: 30px;
+    }
+
+    &__body {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    &__list--revenue {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 127px;
+    }
+    &__scheme {
+        width: 582px;
+        padding-left: 32px;
+    }
+
+    &__list--months {
+        @include flex-content(space-around);
+        
+        padding-left: 32px;
+    }
 }
 
-.main__reviews {
-  display: flex;
-  flex-wrap: wrap;
-  width: 467px;
-  height: 508px;
-  background-color: green;
+.hour-revenue {
+    @include flex-direction(column);
+    @include block-decor(264px, 266px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
 
+    &__title {
+        @include title(center);
+
+        padding-top: 30px;
+    }
+
+    &__content {
+        @include flex-direction-items-content (column, center, space-between);
+
+        position: relative;
+
+        height: 223px;
+        padding: 30px 0;
+    }
+
+    &__chart {
+        @include flex-items-content (center, center);
+       
+        width: 124px;
+        height: 124px;
+    }
+
+    &__chart-amount {
+        width: 124px;
+        height: 124px;
+    }
+
+    &__statistics {
+        @include flex-content (space-between);
+        @include text-size-weight-color (12px, bold, #BFBFBF);
+
+        width: 74px;
+    }
+
+    &__progress::before {
+        content: url(../img/main/hour-progress-icon.png);
+    }
+
+    &__regress::before {
+        content: url(../img/main/hour-regress-icon.png);
+    }
 }
 
-.main__tasks {
-  display: flex;
-  flex-wrap: wrap;
-  width: 501px;
-  height: 245px;
-  background-color: orange;
+.customers-feed {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    background-color:#ffffff;
+    box-shadow: 0px 2px 7px 3px #9C9C9C;
+
+    &__title {
+        @include title(left);
+        padding: 30px 0 38px 30px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 467px;
+        height: 428px;
+    }
+
+    &__user {
+        display: flex;
+    }
+
+    &__user-info {
+        height: 63px;
+        padding-right: 20px;
+    }
+
+    &__avatar {
+        width: 43px;
+        height: 43px;
+    }
+
+    &__status {
+        @include text-size-weight-color (8px, normal,  #979796);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+
+    &__item {
+        width: 269px;
+        margin-bottom: 10px;
+        padding: 15px 20px 15px 21px;
+        
+        @include text-size-weight-color (12px, normal,  #777777);
+
+        border: 2px solid #F1F1F1;
+        list-style-type: none; 
+    }
+
+    &__item:first-child {
+        width: 300px;
+    }
+
+    &__container::after {
+        content: "";
+
+        position: absolute;
+        top: 179px;
+        left: 104px;
+
+        width: 4px;
+        height: 187px;
+
+        background-color: #F1F1F1;
+    }
+
+    &__item span {
+        @include text-size-weight-color (12px, bold,  #777777);
+    }
 }
 
-.main__progres {
-  display: flex;
-  flex-wrap: wrap;
-  width: 241px;
-  height: 245px;
-  background-color: peru;
+.tasks {
+    @include flex-direction (column);
+    @include block-decor (501px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+
+    padding-right: 14px;
+    padding-left: 29px;
+
+    &__title {
+        @include title(left);
+
+        padding-top: 31px;
+    }
+
+    &__checkbox {
+        padding-top: 20px;
+
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    &__line {
+        width: 441px;
+        height: 2px;
+
+        background-color: #EDEDED;
+    }
+
+    .task__checkbox {
+        @include flex-items-content (center, space-between);
+
+        height: 37px;
+
+        .task__body {
+            @include flex-content (space-between);
+
+            width: 401px;
+        }
+
+        .task__label {
+            @include text-size-weight-color (12px, bold, #FD566F);
+        }
+
+        .task__aim {
+            @include text-size-weight-color (12px, normal, #BFBFBF);
+        }
+
+        .task__time {
+            @include text-size-weight-color (12px, bold, #9C9C9C);
+           
+            width: 72px;
+            text-align: right;
+
+            background: url(../img/main/task-clock.png) no-repeat left;
+            background-size: 12px 12px;
+        }
+    }
 }
 
-.main__shipments {
-  display: flex;
-  flex-wrap: wrap;
-  width: 241px;
-  height: 245px;
-  background-color: purple;
+.progress {
+    @include flex-direction (column);
+    @include block-decor (241px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+
+    &__title {
+        @include title(center);
+
+        padding-top: 31px;
+    }
+
+    &__content{
+        @include flex-direction-items-content (column, center, space-between);
+
+        position: relative;
+    }
+
+    &__scheme {
+        @include flex-content (center);
+
+        padding: 29px 0 23px 0;
+    }
+
+    &__amount {
+        @include text-size-weight-color (20px, bold, #8158c0);
+
+        padding-bottom: 11px;
+    }
+
+    &__statistics {
+        @include flex-content (space-between);
+        @include text-size-weight-color (12px, bold, #BFBFBF);
+
+        width: 74px;
+    }
+
+    &__progress::before {
+        content: url(../img/main/hour-progress-icon.png);
+    }
+
+    &__regress::before {
+        content: url(../img/main/hour-regress-icon.png);
+    }
+}
+
+.shipments {
+    @include block-decor (241px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__title {
+        @include title(center);
+
+        padding-top: 31px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    &__map {
+        width: 185px;
+        height: 115px;
+        padding: 24px 25px 19px 29px;
+    }
+
+    &__amount {
+        @include text-size-weight-color (20px, bold, #fc6d73);
+    }
+
+    &__statistics {
+        @include flex-content (space-between);
+
+        width: 74px;
+        color: #BFBFBF;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__progress::before {
+        content: url(../img/main/hour-progress-icon.png);
+    }
+
+    &__regress::before {
+        content: url(../img/main/hour-regress-icon.png);
+    }
 }

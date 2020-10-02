@@ -2,18 +2,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 272px;
+    max-width: 272px;
     height: 222px;
 
-    background: #fff;
+    background: #ffffff;
 }
 
 .footer__title{
-    margin-top: 25px;
+    @include title (center);
 
-    font-weight: bold;
-    font-size: 14px;
-    color: #777777;
+    margin-top: 25px;
 }
 
 .footer__list {
@@ -22,14 +20,14 @@
 }
 
 .footer__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-direction-items-content (center, center);
+
     width: 55px;
     height: 55px;
     margin: 5px;
 
     border-radius: 30%;
+    cursor: pointer;
 }
 
 .footer__item--radio {
@@ -53,5 +51,5 @@
 }
 
 .footer__item--vk {
-    background: linear-gradient(to top left, #fce1a0, #f59283);
+    background: linear-gradient(to top left, #fce1a0, #ec7a68);
 }

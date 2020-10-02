@@ -1,8 +1,148 @@
 .header {
-  display: flex;
-  
-  width: 1298px;
-  height: 166px;
-  background-color: brown;
+    @include block-decor (100%, 169px, #FFFFFF, -3px 5px 6px #BDBDBD);
 
+    z-index: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.panel__list {
+    @include flex-content (space-around);
+
+    width: 1298px;
+    padding: 0;
+
+    list-style-type: none; 
+
+    .panel__item--info {
+        @include header-btn-left-decor (33px, 18px);
+
+        background: url(../img/header/more-btn.png) no-repeat center;
+    }
+
+    .panel__item--folder {
+        @include header-btn-left-decor (20px, 18px);
+
+        background: url(../img/header/folder-btn.png) no-repeat center;
+    }
+
+    .panel__item--settings {
+        @include header-btn-left-decor (21px, 18px);
+       
+        background: url(../img/header/settings-btn.png) no-repeat center;
+    }
+
+    .panel__item-search {
+        padding: 18px 187px 0 187px;
+    }
+
+    .panel__item-search input {
+        @include text-size-weight-color (12px, normal, #777777);
+
+        width: 289px;
+        height: 30px;
+        padding-left: 10px;
+
+        background: url(../img/header/zoom-in-btn.png) no-repeat 95%;
+        border: 1px solid #C8C8C8;
+        border-radius: 40px;
+        outline: none;
+    }
+
+    .panel__item--upload {
+        @include header-btn-right-decor(21px, 18px);
+
+        background: url(../img/header/upload-btn.png) no-repeat center;
+    }
+
+    .panel__item--envelope {
+        @include header-btn-right-decor(21px, 18px);
+
+        background: url(../img/header/envelope-btn.png) no-repeat center;
+    }
+
+    .panel__item--planet {
+        @include header-btn-right-decor(27px, 18px);
+
+        background: url(../img/header/planet-btn.png) no-repeat center;
+    }
+
+    .panel__operator-list {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 0 18px 0 0;
+        
+        list-style-type: none; 
+    }
+
+    .panel__operator-avatar {
+        width: 70px;
+        height: 70px;
+        padding-right: 18px;
+    }
+
+    .panel__operator-information {
+        padding-right: 45px;
+
+        background: url(../img/header/additional-menu.png) no-repeat right;
+    }
+
+    .panel__operator-name {
+        padding-bottom: 5px;
+
+        font-size: 12px;
+        font-weight: bold;
+        color:  #fd4e75 ;
+    }
+
+    .panel__operator-profession {
+        @include text-size-weight-color (10px, normal, #BFBFBF);
+
+        text-transform: capitalize;
+    }
+}
+
+.statistics__list {
+    @include flex-items-content(center, space-around);
+
+    width: 1300px;
+    padding: 15px 0 17px 0;
+
+    list-style-type: none; 
+
+    .statistics__title {
+        @include title (center);
+    }
+
+    .statistics__amount {
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        @include text-size-weight-color (20px, bold,  #fd4e75);
+    }
+
+    .statistics__dynamic {
+        @include flex-content(space-between);
+        @include text-size-weight-color (12px, bold,  #BFBFBF);
+
+        width: 74px;
+    }
+
+    .statistics__progress::before {
+        content: url(../img/header/progress-icon.png);
+    }
+
+    .statistics__regress::before {
+        content: url(../img/header/regress-icon.png);
+    }
+
+    .statistics__additional-btn {
+        @include text-size-weight-color (13px, bold, #fd4e75);
+        
+        cursor: pointer;
+    }
 }

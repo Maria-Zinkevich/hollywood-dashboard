@@ -1,19 +1,128 @@
+  // Small devices
+  
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+// Medium devices
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+// Large devices
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+// Extra large devices
+
+@mixin xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}
+
+// Flexible box 
+
+@mixin flex-direction($direction) {
+	display: flex;
+	flex-direction: $direction;
+}
+
+@mixin flex-items-content($axis-y, $axis-x) {
+	display: flex;
+	align-items: $axis-y;
+	justify-content: $axis-x;
+}
+
+@mixin flex-content($axis-x) {
+	display: flex;
+	justify-content: $axis-x;
+}
+
+@mixin flex-direction-items-content($direction, $axis-y, $axis-x) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $axis-y;
+	justify-content: $axis-x;
+}
+
+// Hover effect (pseudo-elements)
+
 @mixin navbar-pointer($top) {
-    content: ''; 
+	content: ''; 
+	
     position: absolute;
     top: $top;
-    left: 66px;
+    left: 70px;
 
-    border: 7px solid transparent;
-    border-left: 7px solid #FD7858;
+    border: 9px solid transparent;
+    border-left: 9px solid #FD7858;
 }
 
 @mixin aside-pointer($left) {
 	content: ''; 
+
 	position: absolute;
 	top: 47px;
 	left: $left;
 
-	border: 7px solid transparent; 
-	border-top: 7px solid #c44457;
+	border: 9px solid transparent; 
+	border-top: 9px solid #c44457;
 }
+
+// Typography
+
+@mixin title($text-align) {
+	height: 12px;
+
+	font-size: 14px;
+	font-weight: bold;
+	color: #777777;
+
+	text-transform: capitalize;
+	text-align: $text-align;
+}
+
+@mixin text-size-weight-color($size, $weight, $color) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+// Decor
+
+@mixin block-decor($width, $height, $bg-color, $shadow) {
+	width: $width;
+	height: $height;
+
+	background-color: $bg-color;
+	box-shadow: $shadow;
+}
+
+@mixin header-btn-left-decor($width, $height) {
+	width: $width;
+	height: $height;
+	padding: 25px 19px 27px 20px;
+
+	border-right: 2px solid #F1F1F1;
+	cursor: pointer;
+}
+
+@mixin header-btn-right-decor($width, $height) {
+	width: $width;
+	height: $height;
+	padding: 25px 19px 27px 20px;
+
+	border-left: 2px solid #F1F1F1;
+	cursor: pointer;
+}
+

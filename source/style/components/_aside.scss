@@ -1,5 +1,7 @@
 .aside {
-    min-width: 272px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 271px;
     height: 607px;
 
     background-color: #FFFFFF;
@@ -35,15 +37,15 @@
 }
 
 .aside__link--users:hover:after {
-    @include aside-pointer(38px);
+    @include aside-pointer(40px);
 }
 
 .aside__link--chat:hover:after {
-    @include aside-pointer(128px);
+    @include aside-pointer(130px);
 }
 
 .aside__link--like:hover:after {
-    @include aside-pointer(218px);
+    @include aside-pointer(220px);
 }
 
 .aside__actors {
@@ -52,7 +54,10 @@
     justify-content: center;
     background-color: white;
     height: 516px;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .aside__actor {
@@ -71,6 +76,7 @@
 
 .aside__actor::after {
     content: '';
+
     width: 233px;
     padding-top: 19px;
 
@@ -87,14 +93,11 @@
 }
 
 .aside__name {
-    font-size: 13px;
-    font-weight: bold;
-    color: #777777;
+    @include text-size-weight-color (13px, bold, #777777);
 }
 
 .aside__profession {
-    font-size: 10px;
-    color: #BFBFBF;
+    @include text-size-weight-color (10px, normal,#BFBFBF);
 }
 
 .aside__avatar {
@@ -105,10 +108,9 @@
 
 .aside__search {
     display: flex;
-    padding: 10px 0 13px 17px;
- 
-    background-size: 19px 19px;
+    padding: 10px 17px 13px 17px;
 
+    background-size: 19px 19px;
     border-top: 3px solid #F0F0F0;
     border-bottom: 2px solid #F0F0F0;
 }
@@ -116,12 +118,11 @@
 .aside__input{
     width: 161px;
     
-    font-weight: 300;
-    font-size: 10px;
-    color: #F1F1F1;
+    @include text-size-weight-color (10px, 300, #777777);
 
     border: none;
     border-bottom: 2px solid #F1F1F1;
+    outline: none;
 }
 
 .aside__submit {
@@ -130,10 +131,9 @@
     margin-left: 20px;
 
     background: url(../img/aside/icons/zoom-out-icon.png) no-repeat right;
-    
     border: none;
     cursor: pointer;
-    }
+}
 
 .aside__reset {
     width: 19px;
@@ -141,6 +141,5 @@
     margin-left: 12px;
 
     background: url(../img/aside/icons/edit-icon.png) right no-repeat;
-    
     border: none;
 }
