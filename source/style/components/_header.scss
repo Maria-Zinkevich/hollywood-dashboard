@@ -143,6 +143,7 @@
     .statistics__additional-btn {
         @include text-size-weight-color (13px, bold, #fd4e75);
         
+        text-transform: capitalize;
         cursor: pointer;
     }
 }

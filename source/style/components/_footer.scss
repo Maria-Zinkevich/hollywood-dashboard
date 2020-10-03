@@ -20,7 +20,7 @@
 }
 
 .footer__item {
-    @include flex-direction-items-content (center, center);
+    @include flex-items-content (center, center);
 
     width: 55px;
     height: 55px;

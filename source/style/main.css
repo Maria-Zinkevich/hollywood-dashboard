@@ -360,9 +360,27 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1298px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-width: 990px;
+  margin: 18px 18px 18px 14px;
 }
 
 .main__container-inner {
@@ -374,7 +392,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 501px;
+  width: 501px;
+  outline: 2px solid red;
 }
 
 .container-inner {
@@ -384,7 +403,6 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 271px;
-  height: 835px;
   -webkit-box-shadow: -3px 0px 6px #BDBDBD;
           box-shadow: -3px 0px 6px #BDBDBD;
 }
@@ -399,9 +417,12 @@ template {
           flex-direction: column;
   z-index: 1;
   width: 74px;
-  height: 1000px;
   background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
   background: linear-gradient(90deg, #fd4e75, #fc7858);
+}
+
+@media (max-width: 768px) {
+  display: none;
 }
 
 .navbar__logo {
@@ -427,7 +448,7 @@ template {
 .navbar__nav {
   position: relative;
   width: 70px;
-  height: 929px;
+  height: 849px;
 }
 
 .navbar__link {
@@ -449,8 +470,7 @@ template {
 
 .navbar__power-btn {
   width: 70px;
-  min-height: 70px;
-  margin-bottom: 19px;
+  height: 70px;
   color: #ffffff;
   background-color: transparent;
   border: none;
@@ -483,7 +503,7 @@ template {
 }
 
 .navbar__power-btn {
-  background: url(../img/navbar/power-icon.png) no-repeat bottom;
+  background: url(../img/navbar/power-icon.png) no-repeat center;
 }
 
 .navbar__link--home:hover:after {
@@ -663,6 +683,7 @@ template {
   font-size: 10px;
   font-weight: normal;
   color: #BFBFBF;
+  text-transform: capitalize;
 }
 
 .statistics__list {
@@ -680,9 +701,12 @@ template {
 }
 
 .statistics__list .statistics__title {
-  font-size: 12px;
+  height: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #777777;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .statistics__list .statistics__amount {
@@ -718,21 +742,8 @@ template {
   font-size: 13px;
   font-weight: bold;
   color: #fd4e75;
+  text-transform: capitalize;
   cursor: pointer;
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 990px;
-  min-height: 795px;
-  margin: 18px 18px 27px 19px;
 }
 
 .monthly-revenue {
@@ -910,6 +921,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 508px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 7px 3px #9C9C9C;
           box-shadow: 0px 2px 7px 3px #9C9C9C;
@@ -1022,6 +1034,7 @@ template {
           box-shadow: 0px 2px 7px 3px #9C9C9C;
   padding-right: 14px;
   padding-left: 29px;
+  margin-bottom: 19px;
 }
 
 .tasks__title {
@@ -1435,14 +1448,17 @@ template {
       flex-wrap: wrap;
   max-width: 272px;
   height: 222px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .footer__title {
-  margin-top: 25px;
-  font-weight: bold;
+  height: 12px;
   font-size: 14px;
+  font-weight: bold;
   color: #777777;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .footer__list {
@@ -1457,12 +1473,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 55px;
   height: 55px;
   margin: 5px;
