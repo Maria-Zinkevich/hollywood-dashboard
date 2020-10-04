@@ -12,7 +12,7 @@
 .panel__list {
     @include flex-content (space-around);
 
-    width: 1298px;
+    width: 100%;
     padding: 0;
 
     list-style-type: none; 
@@ -35,8 +35,13 @@
         background: url(../img/header/settings-btn.png) no-repeat center;
     }
 
-    .panel__item-search {
-        padding: 18px 187px 0 187px;
+    .panel__item--search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        // padding-top: 18px;
+        // padding: 18px 187px 0 187px;
     }
 
     .panel__item-search input {
@@ -94,13 +99,13 @@
     .panel__operator-name {
         padding-bottom: 5px;
 
-        font-size: 12px;
+        font-size: calc(12px + .1vw);
         font-weight: bold;
         color:  #fd4e75 ;
     }
 
     .panel__operator-profession {
-        @include text-size-weight-color (10px, normal, #BFBFBF);
+        @include text-size-weight-color (calc(10px + .1vw), normal, #BFBFBF);
 
         text-transform: capitalize;
     }
@@ -109,25 +114,26 @@
 .statistics__list {
     @include flex-items-content(center, space-around);
 
-    width: 1300px;
+    width: 100%;
     padding: 15px 0 17px 0;
 
     list-style-type: none; 
-
+    
     .statistics__title {
         @include title (center);
+        
     }
 
     .statistics__amount {
         padding-top: 8px;
         padding-bottom: 8px;
 
-        @include text-size-weight-color (20px, bold,  #fd4e75);
+        @include text-size-weight-color (calc(20px + .1vw), bold,  #fd4e75);
     }
 
     .statistics__dynamic {
         @include flex-content(space-between);
-        @include text-size-weight-color (12px, bold,  #BFBFBF);
+        @include text-size-weight-color (calc(11px + .1vw), bold,  #BFBFBF);
 
         width: 74px;
     }
@@ -141,7 +147,7 @@
     }
 
     .statistics__additional-btn {
-        @include text-size-weight-color (13px, bold, #fd4e75);
+        @include text-size-weight-color (calc(13px + .1vw), bold, #fd4e75);
         
         text-transform: capitalize;
         cursor: pointer;

@@ -17,7 +17,7 @@
     }
 
     &__list {
-        @include text-size-weight-color (12px, bold, #BFBFBF);
+        @include text-size-weight-color (calc(12px + .1vw), bold, #BFBFBF);
 
         display: flex;
         padding: 0;
@@ -86,7 +86,7 @@
 
     &__statistics {
         @include flex-content (space-between);
-        @include text-size-weight-color (12px, bold, #BFBFBF);
+        @include text-size-weight-color (calc(12px + .1vw), bold, #BFBFBF);
 
         width: 74px;
     }
@@ -139,7 +139,7 @@
     }
 
     &__status {
-        @include text-size-weight-color (8px, normal,  #979796);
+        @include text-size-weight-color (calc(8px + .1vw), normal,  #979796);
     }
 
     &__list {
@@ -155,7 +155,7 @@
         margin-bottom: 10px;
         padding: 15px 20px 15px 21px;
         
-        @include text-size-weight-color (12px, normal,  #777777);
+        @include text-size-weight-color (calc(12px + .1vw), normal,  #777777);
 
         border: 2px solid #F1F1F1;
         list-style-type: none; 
@@ -179,7 +179,7 @@
     }
 
     &__item span {
-        @include text-size-weight-color (12px, bold,  #777777);
+        @include text-size-weight-color (calc(12px + .1vw), bold,  #777777);
     }
 }
 
@@ -223,15 +223,15 @@
         }
 
         .task__label {
-            @include text-size-weight-color (12px, bold, #FD566F);
+            @include text-size-weight-color (calc(12px + .1vw), bold, #FD566F);
         }
 
         .task__aim {
-            @include text-size-weight-color (12px, normal, #BFBFBF);
+            @include text-size-weight-color (calc(12px + .1vw), normal, #BFBFBF);
         }
 
         .task__time {
-            @include text-size-weight-color (12px, bold, #9C9C9C);
+            @include text-size-weight-color (calc(12px + .1vw), bold, #9C9C9C);
            
             width: 72px;
             text-align: right;
@@ -265,14 +265,14 @@
     }
 
     &__amount {
-        @include text-size-weight-color (20px, bold, #8158c0);
+        @include text-size-weight-color (calc(20px + .1vw), bold, #8158c0);
 
         padding-bottom: 11px;
     }
 
     &__statistics {
         @include flex-content (space-between);
-        @include text-size-weight-color (12px, bold, #BFBFBF);
+        @include text-size-weight-color (calc(12px + .1vw), bold, #BFBFBF);
 
         width: 74px;
     }
@@ -312,7 +312,7 @@
     }
 
     &__amount {
-        @include text-size-weight-color (20px, bold, #fc6d73);
+        @include text-size-weight-color (calc(20px + .1vw), bold, #fc6d73);
     }
 
     &__statistics {
@@ -320,7 +320,7 @@
 
         width: 74px;
         color: #BFBFBF;
-        font-size: 12px;
+        font-size: calc(12px + .1vw);
         font-weight: bold;
     }
     &__progress::before {

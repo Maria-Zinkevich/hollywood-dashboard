@@ -365,7 +365,23 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   max-width: 1298px;
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .main {
@@ -407,6 +423,8 @@ template {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,12 +434,25 @@ template {
           flex-direction: column;
   z-index: 1;
   width: 74px;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#fd4e75), to(#fc7858));
   background: linear-gradient(90deg, #fd4e75, #fc7858);
 }
 
 @media (max-width: 768px) {
-  display: none;
+  .navbar {
+    min-height: 70px;
+    height: 70px;
+    width: 100%;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .navbar__logo {
@@ -450,6 +481,18 @@ template {
   height: 849px;
 }
 
+@media (max-width: 768px) {
+  .navbar__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__nav {
+    display: none;
+  }
+}
+
 .navbar__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +517,12 @@ template {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .navbar__power-btn {
+    display: none;
+  }
 }
 
 .navbar__link--home {
@@ -572,7 +621,7 @@ template {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 1298px;
+  width: 100%;
   padding: 0;
   list-style-type: none;
 }
@@ -604,8 +653,19 @@ template {
   background: url(../img/header/settings-btn.png) no-repeat center;
 }
 
-.panel__list .panel__item-search {
-  padding: 18px 187px 0 187px;
+.panel__list .panel__item--search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .panel__list .panel__item-search input {
@@ -673,13 +733,13 @@ template {
 
 .panel__list .panel__operator-name {
   padding-bottom: 5px;
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #fd4e75;
 }
 
 .panel__list .panel__operator-profession {
-  font-size: 10px;
+  font-size: calc(10px + .1vw);
   font-weight: normal;
   color: #BFBFBF;
   text-transform: capitalize;
@@ -694,14 +754,14 @@ template {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 1300px;
+  width: 100%;
   padding: 15px 0 17px 0;
   list-style-type: none;
 }
 
 .statistics__list .statistics__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -711,7 +771,7 @@ template {
 .statistics__list .statistics__amount {
   padding-top: 8px;
   padding-bottom: 8px;
-  font-size: 20px;
+  font-size: calc(20px + .1vw);
   font-weight: bold;
   color: #fd4e75;
 }
@@ -723,7 +783,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
+  font-size: calc(11px + .1vw);
   font-weight: bold;
   color: #BFBFBF;
   width: 74px;
@@ -738,7 +798,7 @@ template {
 }
 
 .statistics__list .statistics__additional-btn {
-  font-size: 13px;
+  font-size: calc(13px + .1vw);
   font-weight: bold;
   color: #fd4e75;
   text-transform: capitalize;
@@ -768,7 +828,7 @@ template {
 
 .monthly-revenue__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -776,7 +836,7 @@ template {
 }
 
 .monthly-revenue__list {
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #BFBFBF;
   display: -webkit-box;
@@ -842,7 +902,7 @@ template {
 
 .hour-revenue__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -895,7 +955,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #BFBFBF;
   width: 74px;
@@ -928,7 +988,7 @@ template {
 
 .customers-feed__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -968,7 +1028,7 @@ template {
 }
 
 .customers-feed__status {
-  font-size: 8px;
+  font-size: calc(8px + .1vw);
   font-weight: normal;
   color: #979796;
 }
@@ -991,7 +1051,7 @@ template {
   width: 269px;
   margin-bottom: 10px;
   padding: 15px 20px 15px 21px;
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: normal;
   color: #777777;
   border: 2px solid #F1F1F1;
@@ -1013,7 +1073,7 @@ template {
 }
 
 .customers-feed__item span {
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #777777;
 }
@@ -1038,7 +1098,7 @@ template {
 
 .tasks__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -1082,19 +1142,19 @@ template {
 }
 
 .tasks .task__checkbox .task__label {
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #FD566F;
 }
 
 .tasks .task__checkbox .task__aim {
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: normal;
   color: #BFBFBF;
 }
 
 .tasks .task__checkbox .task__time {
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #9C9C9C;
   width: 72px;
@@ -1120,7 +1180,7 @@ template {
 
 .progress__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -1156,7 +1216,7 @@ template {
 }
 
 .progress__amount {
-  font-size: 20px;
+  font-size: calc(20px + .1vw);
   font-weight: bold;
   color: #8158c0;
   padding-bottom: 11px;
@@ -1169,7 +1229,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
   color: #BFBFBF;
   width: 74px;
@@ -1202,7 +1262,7 @@ template {
 
 .shipments__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;
@@ -1230,7 +1290,7 @@ template {
 }
 
 .shipments__amount {
-  font-size: 20px;
+  font-size: calc(20px + .1vw);
   font-weight: bold;
   color: #fc6d73;
 }
@@ -1244,7 +1304,7 @@ template {
           justify-content: space-between;
   width: 74px;
   color: #BFBFBF;
-  font-size: 12px;
+  font-size: calc(12px + .1vw);
   font-weight: bold;
 }
 
@@ -1452,7 +1512,7 @@ template {
 
 .footer__title {
   height: 12px;
-  font-size: 14px;
+  font-size: calc(14px + .1vw);
   font-weight: bold;
   color: #777777;
   text-transform: capitalize;

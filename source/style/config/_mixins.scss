@@ -84,7 +84,7 @@
 @mixin title($text-align) {
 	height: 12px;
 
-	font-size: 14px;
+	font-size: calc(14px + .1vw);
 	font-weight: bold;
 	color: #777777;
 
