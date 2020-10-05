@@ -1,5 +1,5 @@
 # Hollywood dashboard
 
-[link]()
+https://maria-zinkevich.github.io/hollywood-dashboard/
 
 ### Description
