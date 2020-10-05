@@ -155,7 +155,7 @@
     border-radius: 40px;
 }
   
-  .navbar__burger-menu::after {
+.navbar__burger-menu::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -163,9 +163,9 @@
     height: 6px;
     background: #ffffff;
     border-radius: 40px;
-  }
+}
   
-  .navbar__burger-menu::before {
+.navbar__burger-menu::before {
    content: "";
    position: absolute;
    top: 20px;
@@ -173,4 +173,4 @@
    height: 5px;
    background: #ffffff;
    border-radius: 40px;
-  }
+}

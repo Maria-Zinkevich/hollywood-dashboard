@@ -373,6 +373,9 @@ template {
 
 @media (max-width: 768px) {
   .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 70px;
     margin-left: 0;
   }
@@ -443,7 +446,7 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    max-width: 740%;
+    max-width: 740px;
   }
 }
 
@@ -932,7 +935,7 @@ template {
 @media (max-width: 768px) {
   .monthly-revenue {
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
   }
 }
 
@@ -1030,7 +1033,7 @@ template {
 @media (max-width: 768px) {
   .hour-revenue {
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
   }
 }
 
@@ -1133,7 +1136,7 @@ template {
 @media (max-width: 768px) {
   .customers-feed {
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
   }
 }
 
@@ -1274,7 +1277,7 @@ template {
 @media (max-width: 768px) {
   .tasks {
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 4%;
   }
 }
 
