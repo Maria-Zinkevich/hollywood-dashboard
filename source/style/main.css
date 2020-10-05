@@ -932,6 +932,7 @@ template {
 @media (max-width: 768px) {
   .monthly-revenue {
     width: 100%;
+    margin-bottom: 3%;
   }
 }
 
@@ -1029,6 +1030,7 @@ template {
 @media (max-width: 768px) {
   .hour-revenue {
     width: 100%;
+    margin-bottom: 3%;
   }
 }
 
@@ -1131,6 +1133,7 @@ template {
 @media (max-width: 768px) {
   .customers-feed {
     width: 100%;
+    margin-bottom: 3%;
   }
 }
 
@@ -1271,6 +1274,7 @@ template {
 @media (max-width: 768px) {
   .tasks {
     width: 100%;
+    margin-bottom: 3%;
   }
 }
 
