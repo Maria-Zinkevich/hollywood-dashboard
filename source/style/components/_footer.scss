@@ -6,17 +6,30 @@
     height: 222px;
 
     background: #ffffff;
+
+    @include md {
+        width: 100%;
+        max-width: 740px;
+        height: 25%;
+    }
 }
 
 .footer__title{
     @include title (center);
 
     margin-top: 25px;
+    @include md {
+        width: 100%;
+    }
 }
 
 .footer__list {
     display: flex;
     flex-wrap: wrap;
+    @include md {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .footer__item {

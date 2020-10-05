@@ -4,9 +4,7 @@
 
 .wrap {
     display: flex;
-    // flex-wrap: wrap;
     max-width: 1366px;
-    // height: 1000px;
     margin: 0 auto;
     
     font-family: $primary-font, Arial, Helvetica, sans-serif;
@@ -41,8 +39,8 @@
     align-content: space-between;
     width: 82%;
     max-width: 990px;
-    // height: 794px;
     margin: 18px 18px 18px 14px;
+
     @include md {
         width: 100%;
     }
@@ -53,7 +51,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 50%;
-    // height: 509px;
+
     @include md {
         width: 100%;
     }
@@ -64,9 +62,12 @@
     flex-wrap: wrap;
     width: 21%;
     max-width: 271px;
-    // height: 835px;
 
     box-shadow: -3px 0px 6px #BDBDBD;
-   
 
+    @include md {
+        justify-content: center;
+        width: 100%;
+        max-width: 740%;
+    }
 }

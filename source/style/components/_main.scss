@@ -121,10 +121,7 @@
 }
 
 .customers-feed {
-    position: relative;
-
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     width: 47%;
     height: 508px;
@@ -138,10 +135,12 @@
 
     &__title {
         @include title(left);
-        padding: 6% 0 38px 6%;
+        width: 88%;
+        padding: 6% 6% 8% 6%;
     }
 
     &__container {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -178,6 +177,10 @@
         width: 74%;
         padding: 0;
         margin-bottom: 5%;
+
+        @include md {
+            margin-bottom: 2%;
+        }
     }
 
 
@@ -201,13 +204,17 @@
         content: "";
 
         position: absolute;
-        top: 33.4%;
+        top: 22%;
         left: 22%;
 
         width: 4px;
-        height: 175px;
+        height: 41%;
 
         background-color: #F1F1F1;
+
+        @include md {
+            height: 42%;
+        }
     }
 
     &__item span {
