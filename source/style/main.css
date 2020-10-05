@@ -1032,6 +1032,14 @@ template {
   padding-right: 6%;
 }
 
+.monthly-revenue__item:not(:last-child):hover {
+  padding: 2% 3% 5% 4%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#f77359)) #fd5272;
+  background: linear-gradient(0deg, #fd5272 0%, #f77359 100%) #fd5272;
+  border-radius: 10px;
+  color: #fff;
+}
+
 .monthly-revenue__item--more {
   background: url(../img/main/additional-menu.png) no-repeat;
   margin-left: 22px;
