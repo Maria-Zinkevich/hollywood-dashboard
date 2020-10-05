@@ -24,6 +24,7 @@
                 <a class="navbar__link navbar__link--queries" href="#">Queries</a>
             </nav>
             <button class="navbar__power-btn"></button>
+            <div class="navbar__burger-menu"></div> 
         </div> <!-- ./navbar -->
 
         <div class="container">
@@ -63,66 +64,68 @@
                     </li>
                 </ul>
 
-
-                <ul class="statistics__list">
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily visitors</p>
-                        <p class="statistics__amount">150,0000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily customers</p>
-                        <p class="statistics__amount">120,0000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily orders</p>
-                        <p class="statistics__amount">900,000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily sales</p>
-                        <p class="statistics__amount">850,000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily shipments</p>
-                        <p class="statistics__amount">750,000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily revenue</p>
-                        <p class="statistics__amount">$985,0000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item">
-                        <p class="statistics__title">Daily reviews</p>
-                        <p class="statistics__amount">600,000</p>
-                        <div class="statistics__dynamic">
-                            <p class="statistics__progress">1020</p>
-                            <p class="statistics__regress">1020</p>
-                        </div>
-                    </li>
-                    <li class="statistics__item statistics__additional-btn">+ Add stactics</li>
-                </ul>
+                <div class="statistics__container">
+                    <ul class="statistics__list">
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily visitors</p>
+                            <p class="statistics__amount">150,0000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily customers</p>
+                            <p class="statistics__amount">120,0000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily orders</p>
+                            <p class="statistics__amount">900,000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily sales</p>
+                            <p class="statistics__amount">850,000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily shipments</p>
+                            <p class="statistics__amount">750,000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily revenue</p>
+                            <p class="statistics__amount">$985,0000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item">
+                            <p class="statistics__title">Daily reviews</p>
+                            <p class="statistics__amount">600,000</p>
+                            <div class="statistics__dynamic">
+                                <p class="statistics__progress">1020</p>
+                                <p class="statistics__regress">1020</p>
+                            </div>
+                        </li>
+                        <li class="statistics__item statistics__additional-btn">+ Add stactics</li>
+                    </ul>
+                </div>
+                
             </header> <!-- ./header -->
 
             <main class="main">
@@ -135,7 +138,9 @@
                             <li class="monthly-revenue__item">Month</li>
                             <li class="monthly-revenue__item">Day</li>
                             <li class="monthly-revenue__item">Year</li>
+                            <li class="monthly-revenue__item monthly-revenue__item--more"></li>
                         </ul>
+                        
                     </div>
 
                     <div class="monthly-revenue__body">
@@ -195,11 +200,10 @@
                                     <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                 </li>
                                 <li class="customers-feed__item">
-                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                 </li>
                                 <li class="customers-feed__item">
-                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                </li>
+                                    <span>Sophie Turner</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             </ul>
                         </div>
     
@@ -213,7 +217,7 @@
     
                             <ul class="customers-feed__list">
                                 <li class="customers-feed__item">
-                                    <span>Peter Quill</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                    <span>Peter Quill</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
                                 </li>
                             </ul>
                         </div>

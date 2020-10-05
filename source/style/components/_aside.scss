@@ -1,22 +1,26 @@
 .aside {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 271px;
     height: 607px;
 
     background-color: #FFFFFF;
+
+  
 }
 
 .aside__nav {
     position: relative;
 
     display: flex;
+    width: 100%;
 
     background: linear-gradient(90deg, #fd4e75, #fc7858);
 }
 
 .aside__link {
-    width: 91px;
+    width: 34%;
     min-height: 48px;
 }
 
@@ -37,15 +41,15 @@
 }
 
 .aside__link--users:hover:after {
-    @include aside-pointer(40px);
+    @include aside-pointer(14%);
 }
 
 .aside__link--chat:hover:after {
-    @include aside-pointer(130px);
+    @include aside-pointer(47%);
 }
 
 .aside__link--like:hover:after {
-    @include aside-pointer(220px);
+    @include aside-pointer(81%);
 }
 
 .aside__actors {
@@ -93,11 +97,11 @@
 }
 
 .aside__name {
-    @include text-size-weight-color (13px, bold, #777777);
+    @include text-size-weight-color (calc(13px + .1vw), bold, #777777);
 }
 
 .aside__profession {
-    @include text-size-weight-color (10px, normal,#BFBFBF);
+    @include text-size-weight-color (calc(10px + .1vw), normal,#BFBFBF);
 }
 
 .aside__avatar {
@@ -116,7 +120,7 @@
 }
 
 .aside__input{
-    width: 161px;
+    width: 100%;
     
     @include text-size-weight-color (10px, 300, #777777);
 

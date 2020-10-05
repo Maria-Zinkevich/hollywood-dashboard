@@ -64,8 +64,8 @@
     top: $top;
     left: 70px;
 
-    border: 9px solid transparent;
-    border-left: 9px solid #FD7858;
+    border: 11px solid transparent;
+    border-left: 11px solid #FD7858;
 }
 
 @mixin aside-pointer($left) {
@@ -125,4 +125,22 @@
 	border-left: 2px solid #F1F1F1;
 	cursor: pointer;
 }
+
+/* Burger-menu */
+
+	@mixin navbar__burger-menu {
+		position: absolute;
+		left: 20px;
+		top: 50px;
+	
+		display: none;
+		width: 50px;
+		height: 5px;
+		margin-right: 2em;
+	
+		background-color: #333333;
+	}
+	
+
+
 

@@ -21,13 +21,14 @@
     width: 100%;
     max-width: 1298px;
     margin-left: 70px;
+
     @include md {
         margin-top: 70px;
         margin-left: 0;
     }
 
     @include sm {
-        margin-top: 0;
+        margin-top: 70px;
         margin-left: 0;
     }
 
@@ -38,24 +39,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    width: 82%;
     max-width: 990px;
     // height: 794px;
     margin: 18px 18px 18px 14px;
+    @include md {
+        width: 100%;
+    }
 }
 
 .main__container-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 501px;
+    width: 50%;
     // height: 509px;
+    @include md {
+        width: 100%;
+    }
 }
 
 .container-inner {
     display: flex;
     flex-wrap: wrap;
+    width: 21%;
     max-width: 271px;
     // height: 835px;
 
     box-shadow: -3px 0px 6px #BDBDBD;
+   
+
 }

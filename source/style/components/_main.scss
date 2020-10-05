@@ -1,15 +1,16 @@
 .monthly-revenue {
-    @include block-decor (644px, 206px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    @include block-decor (64%, 206px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
 
     padding: 30px;
+
+    @include md {
+        width: 100%;
+    }
 
     &__header {
         @include flex-content(space-between);
 
-        width: 640px;
-        height: 18px;
-
-        background: url(../img/main/additional-menu.png) no-repeat right;
+        height: 18px;    
     }
 
     &__title {
@@ -21,12 +22,18 @@
 
         display: flex;
         padding: 0;
+        padding-right: 4%;
 
         list-style-type: none;
     }
 
     &__item {
-        padding-right: 30px;
+        padding-right: 6%;
+    }
+
+    &__item--more {
+        background: url(../img/main/additional-menu.png) no-repeat;
+        margin-left: 22px;
     }
 
     &__body {
@@ -41,21 +48,26 @@
 
         height: 127px;
     }
+
     &__scheme {
-        width: 582px;
-        padding-left: 32px;
+        width: 96%;
+        padding-left: 4%;
     }
 
     &__list--months {
         @include flex-content(space-around);
-        
-        padding-left: 32px;
+        width: 96%;
+        padding-left: 4%;
     }
 }
 
 .hour-revenue {
     @include flex-direction(column);
-    @include block-decor(264px, 266px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    @include block-decor(26%, 266px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+
+    @include md {
+        width: 100%;
+    }
 
     &__title {
         @include title(center);
@@ -69,7 +81,10 @@
         position: relative;
 
         height: 223px;
-        padding: 30px 0;
+        padding: 11% 0;
+        @include md {
+            padding: 5% 0;
+        }
     }
 
     &__chart {
@@ -88,7 +103,11 @@
         @include flex-content (space-between);
         @include text-size-weight-color (calc(12px + .1vw), bold, #BFBFBF);
 
-        width: 74px;
+        width: 32%;
+
+        @include md {
+            width: 14%;
+        }
     }
 
     &__progress::before {
@@ -98,6 +117,7 @@
     &__regress::before {
         content: url(../img/main/hour-regress-icon.png);
     }
+
 }
 
 .customers-feed {
@@ -106,31 +126,39 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 47%;
     height: 508px;
     
     background-color:#ffffff;
     box-shadow: 0px 2px 7px 3px #9C9C9C;
 
+    @include md {
+        width: 100%;
+    }
+
     &__title {
         @include title(left);
-        padding: 30px 0 38px 30px;
+        padding: 6% 0 38px 6%;
     }
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 467px;
+        width: 100%;
         height: 428px;
     }
 
     &__user {
         display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 290px;
     }
 
     &__user-info {
         height: 63px;
-        padding-right: 20px;
+        padding-right: 5%;
     }
 
     &__avatar {
@@ -139,73 +167,81 @@
     }
 
     &__status {
-        @include text-size-weight-color (calc(8px + .1vw), normal,  #979796);
+        @include text-size-weight-color (calc(7px + .1vw), normal,  #979796);
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        justify-content: space-between;
+        width: 74%;
         padding: 0;
+        margin-bottom: 5%;
     }
 
 
     &__item {
-        width: 269px;
-        margin-bottom: 10px;
-        padding: 15px 20px 15px 21px;
+        width: 81%;
+        padding: 5% 5% 5% 5%;
         
-        @include text-size-weight-color (calc(12px + .1vw), normal,  #777777);
+        @include text-size-weight-color (calc(10px + .1vw), normal,  #777777);
+
+        line-height: 1.3;
 
         border: 2px solid #F1F1F1;
         list-style-type: none; 
     }
 
     &__item:first-child {
-        width: 300px;
+        width: 89%;
     }
 
     &__container::after {
         content: "";
 
         position: absolute;
-        top: 179px;
-        left: 104px;
+        top: 33.4%;
+        left: 22%;
 
         width: 4px;
-        height: 187px;
+        height: 175px;
 
         background-color: #F1F1F1;
     }
 
     &__item span {
-        @include text-size-weight-color (calc(12px + .1vw), bold,  #777777);
+        @include text-size-weight-color (calc(10px + .1vw), bold,  #777777);
     }
 }
 
 .tasks {
     @include flex-direction (column);
-    @include block-decor (501px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    @include block-decor (100%, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
 
-    padding-right: 14px;
-    padding-left: 29px;
-    margin-bottom: 19px;
+    padding-right: 3%;
+    padding-left: 5%;
+    margin-bottom: 4%;
+
+    @include md {
+        width: 100%;
+    }
 
     &__title {
         @include title(left);
 
-        padding-top: 31px;
+        padding-top: 6%;
     }
 
     &__checkbox {
-        padding-top: 20px;
+        padding-top: 4%;
 
         overflow: scroll;
         overflow-x: hidden;
     }
 
     &__line {
-        width: 441px;
+        width: 100%;
         height: 2px;
 
         background-color: #EDEDED;
@@ -219,7 +255,7 @@
         .task__body {
             @include flex-content (space-between);
 
-            width: 401px;
+            width: 90%;
         }
 
         .task__label {
@@ -233,7 +269,7 @@
         .task__time {
             @include text-size-weight-color (calc(12px + .1vw), bold, #9C9C9C);
            
-            width: 72px;
+            width: 19%;
             text-align: right;
 
             background: url(../img/main/task-clock.png) no-repeat left;
@@ -244,12 +280,20 @@
 
 .progress {
     @include flex-direction (column);
-    @include block-decor (241px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    @include block-decor (48%, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+
+    @include md {
+        width: 48%;
+    }
 
     &__title {
         @include title(center);
 
-        padding-top: 31px;
+        padding-top: 12%;
+
+        @include md {
+            padding-top: 6%;
+        }
     }
 
     &__content{
@@ -261,20 +305,28 @@
     &__scheme {
         @include flex-content (center);
 
-        padding: 29px 0 23px 0;
+        padding: 12% 0 10% 0;
+
+        @include md {
+            padding: 6% 0 6% 0;
+        }
     }
 
     &__amount {
         @include text-size-weight-color (calc(20px + .1vw), bold, #8158c0);
 
-        padding-bottom: 11px;
+        padding-bottom: 4%;
     }
 
     &__statistics {
         @include flex-content (space-between);
-        @include text-size-weight-color (calc(12px + .1vw), bold, #BFBFBF);
+        @include text-size-weight-color (calc(11px + .1vw), bold, #BFBFBF);
 
-        width: 74px;
+        width: 31%;
+
+        @include md {
+            width: 22%;
+        }
     }
 
     &__progress::before {
@@ -287,15 +339,23 @@
 }
 
 .shipments {
-    @include block-decor (241px, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    @include block-decor (48%, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 
+    @include md {
+        width: 48%;
+    }
+
     &__title {
         @include title(center);
 
-        padding-top: 31px;
+        padding-top: 12%;
+
+        @include md {
+            padding-top: 6%;
+        }
     }
 
     &__content {
@@ -306,9 +366,13 @@
     }
 
     &__map {
-        width: 185px;
+        width: 76%;
         height: 115px;
-        padding: 24px 25px 19px 29px;
+        padding: 10% 10% 7% 12%;
+
+        @include md {
+            width: 60%;
+        }
     }
 
     &__amount {
@@ -318,10 +382,14 @@
     &__statistics {
         @include flex-content (space-between);
 
-        width: 74px;
+        width: 31%;
         color: #BFBFBF;
-        font-size: calc(12px + .1vw);
+        font-size: calc(11px + .1vw);
         font-weight: bold;
+
+        @include md {
+            width: 22%;
+        }
     }
     &__progress::before {
         content: url(../img/main/hour-progress-icon.png);

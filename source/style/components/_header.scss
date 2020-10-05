@@ -16,6 +16,7 @@
     padding: 0;
 
     list-style-type: none; 
+    border-bottom: 2px solid #F1F1F1;
 
     .panel__item--info {
         @include header-btn-left-decor (33px, 18px);
@@ -55,6 +56,16 @@
         border: 1px solid #C8C8C8;
         border-radius: 40px;
         outline: none;
+
+        @include md {
+            @include text-size-weight-color (10px, normal, #777777);
+            width: 155px;
+        }
+
+        @include sm {
+            @include text-size-weight-color (8px, normal, #777777);
+            width: 100px;
+        }
     }
 
     .panel__item--upload {
@@ -111,10 +122,15 @@
     }
 }
 
+.statistics__container {
+    width: 100%;
+    overflow-x: scroll;
+}
+
 .statistics__list {
     @include flex-items-content(center, space-around);
 
-    width: 100%;
+    width: 1298px;
     padding: 15px 0 17px 0;
 
     list-style-type: none; 

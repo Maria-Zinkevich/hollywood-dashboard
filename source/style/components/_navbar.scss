@@ -11,6 +11,10 @@
     background: linear-gradient(90deg, #fd4e75, #fc7858);
 
     @include md {
+        .navbar__burger-menu {
+            display: block;
+        }
+
         min-height: 70px;
         height: 70px;
         width: 100%;
@@ -18,8 +22,15 @@
     }
 
     @include sm {
-        display: none;
-      }
+        .navbar__burger-menu {
+            display: block;
+        }
+
+        min-height: 70px;
+        height: 70px;
+        width: 100%;
+        align-content: flex-start;
+    }
 }
 
 .navbar__logo {
@@ -28,6 +39,14 @@
     @include block-decor(71px, 71px, #FFFFFF, 5px -1px 6px #BDBDBD);
 
     font-family: 'Galada', cursive;
+
+    @include md {
+        @include block-decor(71px, 71px, #FFFFFF, none);
+    }
+
+    @include sm {
+        @include block-decor(71px, 71px, #FFFFFF, none);
+    }
 }
 
 .navbar__nav {
@@ -68,7 +87,7 @@
 
     @include sm {
         display: none;
-      }
+    }
 }
 
 .navbar__link--home {
@@ -119,3 +138,39 @@
 .navbar__link--queries:hover:after {
     @include navbar-pointer(315px);
 }
+
+.navbar__power-btn:hover {
+    background-color: #c44457;
+    border-radius: 50px;
+}
+
+.navbar__burger-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    width: 37px;
+    height: 5px;
+    margin-left: 90%;
+    background: #ffffff;
+    border-radius: 40px;
+}
+  
+  .navbar__burger-menu::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 37px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 40px;
+  }
+  
+  .navbar__burger-menu::before {
+   content: "";
+   position: absolute;
+   top: 20px;
+   width: 37px;
+   height: 5px;
+   background: #ffffff;
+   border-radius: 40px;
+  }
