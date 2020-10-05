@@ -10,6 +10,7 @@
     font-family: $primary-font, Arial, Helvetica, sans-serif;
 
     background-color: #F0F0F0;
+ 
 }
 
 .container {
@@ -31,6 +32,10 @@
         margin-left: 0;
     }
 
+    @include xm {
+        min-width: 320px;
+     }
+
 }
 
 .main {
@@ -45,6 +50,10 @@
     @include md {
         width: 100%;
     }
+
+    @include xm {
+        width: 320px;
+     }
 }
 
 .main__container-inner {

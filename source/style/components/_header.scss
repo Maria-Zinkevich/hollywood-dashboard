@@ -18,6 +18,17 @@
     list-style-type: none; 
     border-bottom: 2px solid #F1F1F1;
 
+    @include md {
+        padding-left: 0;
+    }
+
+    @include xm {
+        width: 100%;
+        
+        padding-left: 80%;
+        overflow-x: scroll;
+    }
+
     .panel__item--info {
         @include header-btn-left-decor (33px, 18px);
 

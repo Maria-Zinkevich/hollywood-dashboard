@@ -12,6 +12,10 @@
         max-width: 740px;
         height: 25%;
     }
+
+    @include xm {
+        height: 20%;
+    }
 }
 
 .footer__title{
@@ -30,6 +34,12 @@
         width: 100%;
         justify-content: space-around;
     }
+
+    @include xm {
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
 }
 
 .footer__item {
@@ -41,6 +51,11 @@
 
     border-radius: 30%;
     cursor: pointer;
+
+    @include xm {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 .footer__item--radio {

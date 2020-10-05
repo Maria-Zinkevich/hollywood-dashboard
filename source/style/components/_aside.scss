@@ -110,6 +110,10 @@
     @include md {
         width: 80%;
     }
+
+    @include xm {
+        width: 70%;
+    }
 }
 
 .aside__name {
@@ -126,6 +130,10 @@
     padding-right: 17px;
     @include md {
        padding-right: 10%;
+    }
+    
+    @include xm {
+        padding-right: 5%;
     }
 }
 

@@ -8,6 +8,12 @@
         margin-bottom: 4%;
     }
 
+    @include xm {
+        width: 90%;
+        height: 150px;
+        padding: 5%;
+    }
+
     &__header {
         @include flex-content(space-between);
 
@@ -16,6 +22,9 @@
 
     &__title {
         @include title(left);
+        @include xm {
+            font-size: calc(11px + .1vw);
+        }
     }
 
     &__list {
@@ -26,6 +35,11 @@
         padding-right: 4%;
 
         list-style-type: none;
+
+        @include xm {
+            @include text-size-weight-color (calc(8px + .1vw), bold, #BFBFBF);
+            padding-right: 2%;
+        }
     }
 
     &__item {
@@ -35,11 +49,19 @@
     &__item--more {
         background: url(../img/main/additional-menu.png) no-repeat;
         margin-left: 22px;
+
+        @include xm {
+            margin-left: 5px;
+        }
     }
 
     &__body {
         display: flex;
         padding-top: 30px;
+
+        @include xm {
+            padding-top: 20px;
+        }
     }
 
     &__list--revenue {
@@ -48,17 +70,30 @@
         justify-content: space-between;
 
         height: 127px;
+
+        @include xm {
+            height: 80px;
+        }
     }
 
     &__scheme {
         width: 96%;
         padding-left: 4%;
+
+        @include xm {
+            width: 96%;
+            height: 80px;
+        }
     }
 
     &__list--months {
         @include flex-content(space-around);
         width: 96%;
         padding-left: 4%;
+
+        @include xm {
+            font-size: 9px;
+        }
     }
 }
 
@@ -68,6 +103,7 @@
 
     @include md {
         width: 100%;
+        height: 250px;
         margin-bottom: 4%;
     }
 
@@ -86,6 +122,10 @@
         padding: 11% 0;
         @include md {
             padding: 5% 0;
+        }
+
+        @include xm {
+            padding-top: 10%;
         }
     }
 
@@ -109,6 +149,10 @@
 
         @include md {
             width: 14%;
+        }
+
+        @include xm {
+            width: 30%;
         }
     }
 
@@ -134,6 +178,11 @@
     @include md {
         width: 100%;
         margin-bottom: 4%;
+    }
+
+    @include xm {
+        width: 100%;
+        height: 470px;
     }
 
     &__title {
@@ -218,6 +267,11 @@
         @include md {
             height: 42%;
         }
+
+        @include xm {
+            top: 23%;
+            height: 43%;
+        }
     }
 
     &__item span {
@@ -229,6 +283,7 @@
     @include flex-direction (column);
     @include block-decor (100%, 245px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
 
+    z-index: 1;
     padding-right: 3%;
     padding-left: 5%;
     margin-bottom: 4%;
@@ -238,6 +293,10 @@
         margin-bottom: 4%;
     }
 
+    @include xm {
+        @include block-decor (100%, 145px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    }
+
     &__title {
         @include title(left);
 
@@ -245,7 +304,7 @@
     }
 
     &__checkbox {
-        padding-top: 4%;
+        padding-top: 6%;
 
         overflow: scroll;
         overflow-x: hidden;
@@ -263,6 +322,10 @@
 
         height: 37px;
 
+        @include xm {
+            height: 30px;
+        }
+
         .task__body {
             @include flex-content (space-between);
 
@@ -271,10 +334,18 @@
 
         .task__label {
             @include text-size-weight-color (calc(12px + .1vw), bold, #FD566F);
+
+            @include xm {
+                @include text-size-weight-color (calc(8px + .1vw), bold, #FD566F);
+            }
         }
 
         .task__aim {
             @include text-size-weight-color (calc(12px + .1vw), normal, #BFBFBF);
+
+            @include xm {
+                font-size: 7px;
+            }
         }
 
         .task__time {
@@ -285,6 +356,14 @@
 
             background: url(../img/main/task-clock.png) no-repeat left;
             background-size: 12px 12px;
+
+            @include xm {
+                width: 20%;
+
+                @include text-size-weight-color (calc(8px + .1vw), bold, #9C9C9C);
+
+                background-size: 8px 8px;
+            }
         }
     }
 }
@@ -295,6 +374,10 @@
 
     @include md {
         width: 48%;
+    }
+
+    @include xm {
+        @include block-decor (48%, 145px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
     }
 
     &__title {
@@ -321,12 +404,20 @@
         @include md {
             padding: 6% 0 6% 0;
         }
+        
+        @include xm {
+            width: 60%;
+        }
     }
 
     &__amount {
         @include text-size-weight-color (calc(20px + .1vw), bold, #8158c0);
 
         padding-bottom: 4%;
+
+        @include xm {
+            @include text-size-weight-color (calc(15px + .1vw), bold, #8158c0);
+        }
     }
 
     &__statistics {
@@ -337,6 +428,11 @@
 
         @include md {
             width: 22%;
+        }
+
+        @include xm {
+            @include text-size-weight-color (calc(9px + .1vw), bold, #BFBFBF);
+            width: 45%;
         }
     }
 
@@ -359,6 +455,10 @@
         width: 48%;
     }
 
+    @include xm {
+        @include block-decor (48%, 145px, #FFFFFF, 0px 2px 7px 3px #9C9C9C);
+    }
+
     &__title {
         @include title(center);
 
@@ -374,6 +474,10 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
+
+        @include xm {
+            
+        }
     }
 
     &__map {
@@ -384,23 +488,37 @@
         @include md {
             width: 60%;
         }
+
+        @include xm {
+            width: 60%;
+            height: 60px;
+        }
     }
 
     &__amount {
         @include text-size-weight-color (calc(20px + .1vw), bold, #fc6d73);
+
+        @include xm {
+            @include text-size-weight-color (calc(15px + .1vw), bold, #fc6d73);
+        }
     }
 
     &__statistics {
         @include flex-content (space-between);
 
         width: 31%;
-        color: #BFBFBF;
-        font-size: calc(11px + .1vw);
-        font-weight: bold;
+
+        @include text-size-weight-color (calc(11px + .1vw), bold,#BFBFBF);
 
         @include md {
             width: 22%;
         }
+
+        @include xm {
+            @include text-size-weight-color (calc(9px + .1vw), bold, #BFBFBF);
+            width: 42%;
+        }
+
     }
     &__progress::before {
         content: url(../img/main/hour-progress-icon.png);
